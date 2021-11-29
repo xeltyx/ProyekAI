@@ -19,7 +19,7 @@ import javax.swing.JLabel;
  *
  * @author ASUS
  */
-public class AsistensiGame extends JFrame{
+public class Game extends JFrame{
     JFrame continueMenu = new JFrame();
     JFrame newgameMenu = new JFrame();
     ImageIcon clickedCon;
