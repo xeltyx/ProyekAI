@@ -5,6 +5,7 @@
  */
 package ProyekAI.game.world;
 
+import ProyekAI.game.Logic;
 import ProyekAI.game.entities.Entitymanager;
 import ProyekAI.game.entities.bahamut;
 import ProyekAI.game.entities.behemo;
@@ -140,33 +141,33 @@ public class world {
     private void stage1entity()
     {
         entitymanager.addEntity(new torch(handler,400,400));
-
-        //enemy
-        for (int i = 0; i < 2; i++) {
-            x=rand.nextInt(155)+230;
-            y=rand.nextInt(430)+170;
-            entitymanager.addEntity(new skeleton(handler,x,y));
-        }
-        
-        for (int i = 0; i < 4; i++) {
-            x=rand.nextInt(1210)+490;
-            y=rand.nextInt(268)+930;
-            entitymanager.addEntity(new zombiewarrior(handler,x,y));
-        }
-        
-        for (int i = 0; i < 4; i++) {
-            x=rand.nextInt(613)+97;
-            y=rand.nextInt(201)+1510;
-            entitymanager.addEntity(new zombiemage(handler,x,y));
-        }
-        
-        for (int i = 0; i < 2; i++) {
-            x=rand.nextInt(530)+1650;
-            y=rand.nextInt(399)+96;
-            entitymanager.addEntity(new skeleton(handler,x,y));
-        }
-        
-        entitymanager.addEntity(new ghost(handler,1931,265));
+        Logic.enemystage1=true;
+//        //enemy
+//        for (int i = 0; i < 2; i++) {
+//            x=rand.nextInt(155)+230;
+//            y=rand.nextInt(430)+170;
+//            entitymanager.addEntity(new skeleton(handler,x,y));
+//        }
+//        
+//        for (int i = 0; i < 4; i++) {
+//            x=rand.nextInt(1210)+490;
+//            y=rand.nextInt(268)+930;
+//            entitymanager.addEntity(new zombiewarrior(handler,x,y));
+//        }
+//        
+//        for (int i = 0; i < 4; i++) {
+//            x=rand.nextInt(613)+97;
+//            y=rand.nextInt(201)+1510;
+//            entitymanager.addEntity(new zombiemage(handler,x,y));
+//        }
+//        
+//        for (int i = 0; i < 2; i++) {
+//            x=rand.nextInt(530)+1650;
+//            y=rand.nextInt(399)+96;
+//            entitymanager.addEntity(new skeleton(handler,x,y));
+//        }
+//        
+//        entitymanager.addEntity(new ghost(handler,1931,265));
         
         Stat.setJumlahmusuh(13);
     }
@@ -229,7 +230,6 @@ public class world {
         
         //enemy
         entitymanager.addEntity(new behemo(handler,600,400));
-        
         entitymanager.addEntity(new minotaur(handler,180,700));
     }
     
