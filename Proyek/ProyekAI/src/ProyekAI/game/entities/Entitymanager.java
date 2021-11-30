@@ -51,6 +51,7 @@ public class Entitymanager {
             {
                 enemytime=0;
                 addEntity(new skeleton(handler,500,500));
+                
             }
             enemytime++;
         }

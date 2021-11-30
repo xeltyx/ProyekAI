@@ -23,12 +23,12 @@ public class Node implements Comparable<Node>{
       public List<Edge> neighbors;
 
       // Evaluation functions
-      public double f = Double.MAX_VALUE;
-      public double g = Double.MAX_VALUE;
+      public float f = Float.MAX_VALUE;
+      public float g = Float.MAX_VALUE;
       // Hardcoded heuristic
-      public double h; 
+      public float h; 
 
-      Node(double h){
+      public Node(float h){
             this.h = h;
             this.id = idCounter++;
             this.neighbors = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Node implements Comparable<Node>{
 
       @Override
       public int compareTo(Node n) {
-            return Double.compare(this.f, n.f);
+            return Float.compare(this.f, n.f);
       }
 
       public static class Edge {

@@ -5,6 +5,7 @@
  */
 package ProyekAI.game.entities;
 
+import ProyekAI.game.Node;
 import ProyekAI.game.gfx.animation;
 import ProyekAI.game.gfx.assets;
 import ProyekAI.game.handler.handler;
@@ -131,7 +132,8 @@ public class skeleton extends character{
             }
         }
     }
-    
+    float h;
+    Node n;
     @Override
     public void tick() {
         dietick();
@@ -144,7 +146,9 @@ public class skeleton extends character{
         getinput();
         move();
         attack();
-        
+        h = x - player.getXpl() + y - player.getYpl();
+        n = new Node(h);
+        System.out.println(h);
     }
 
     @Override
