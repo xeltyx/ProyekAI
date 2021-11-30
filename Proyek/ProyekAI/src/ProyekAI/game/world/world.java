@@ -142,6 +142,7 @@ public class world {
     {
         entitymanager.addEntity(new torch(handler,400,400));
         Logic.enemystage1=true;
+        
 //        //enemy
 //        for (int i = 0; i < 2; i++) {
 //            x=rand.nextInt(155)+230;

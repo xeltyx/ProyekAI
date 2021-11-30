@@ -20,6 +20,11 @@ import java.util.Random;
 public class skeleton extends character{
     player p;
     
+    int[] openset; 
+    int[] closeset;
+    int start;
+    int end;
+    
     //attack animation index
     int index=0;
     int timeratt=0;
@@ -36,7 +41,6 @@ public class skeleton extends character{
     boolean die=false;
     
     private long lastattacktimer,attackcooldown=2000,attacktimer=attackcooldown;
-    
     
     boolean up,down,left,right;
     boolean moveup,movedown,moveleft,moveright;
@@ -290,8 +294,6 @@ public class skeleton extends character{
     
     private void getinput()
     {
-
-        
         if(time==70)
         {
             move=rand.nextInt(5)+1;
