@@ -6,7 +6,9 @@
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/tampilan.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/font.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/input/input.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/statics/bananatree.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/res/world/stage2.txt</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/sabertooth.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/Logic.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/Game.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/ImageLoader.java</file>
@@ -14,9 +16,12 @@
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/player.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/res/world/home.txt</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/tiles/tilegame.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/statics/Tree.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/game.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/item/item.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/MainMenu.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/utils/utils.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/item/listshop.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/Gamecamera.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/assets.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/statics/StaticEntity.java</file>
@@ -26,10 +31,13 @@
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/animation.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/skeleton.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/res/world/shop.txt</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/handler.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/Entity.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/spritesheet.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/item/bahancraft.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/text.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/bahamut.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/item/listcraft.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/stat/Stat.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/Continue.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/res/world/stage1.txt</file>

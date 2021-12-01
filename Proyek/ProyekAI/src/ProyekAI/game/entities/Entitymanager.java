@@ -52,14 +52,8 @@ public class Entitymanager {
         {
             if(enemytime>700 && enemyctr<20)
             {
-                enemyctr++;
-                enemytime=0;
-                addEntity(new skeleton(handler,2140,230));
-            }
-            enemytime++;
-            
-            AStar as = new AStar(tile, 4, 20, true);
-            List<AStar.Node> pathh = as.findPathTo(7, 7);
+            AStar as = new AStar(tile, 4,33, true);
+            List<AStar.Node> pathh = as.findPathTo(6, 6);
             if (pathh != null) {
                 pathh.forEach((n) -> {
                     tile[n.y][n.x] = -1;
@@ -99,6 +93,12 @@ public class Entitymanager {
                     System.out.println();
                 }
             }
+                enemyctr++;
+                enemytime=0;
+                addEntity(new skeleton(handler,2140,230));
+            }
+            enemytime++;
+            
         }
         for (int i = 0; i < entities.size(); i++) {
             Entity e = entities.get(i);
