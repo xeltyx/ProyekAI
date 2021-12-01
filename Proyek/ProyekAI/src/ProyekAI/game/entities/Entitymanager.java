@@ -19,6 +19,7 @@ import java.util.Comparator;
 public class Entitymanager {
     int time=0;
     int enemytime=0;
+    int enemyctr=0;
     private handler handler;
     public static player player;
     private ArrayList<Entity> entities = new ArrayList<>();
@@ -47,11 +48,12 @@ public class Entitymanager {
     {            
         if(Logic.enemystage1)
         {
-            if(enemytime>200)
+            if(enemytime>300 && enemyctr<20)
             {
+                enemyctr++;
                 enemytime=0;
-                addEntity(new skeleton(handler,500,500));
-                
+//                addEntity(new skeleton(handler,1950,1900));
+                addEntity(new skeleton(handler,2140,230));
             }
             enemytime++;
         }

@@ -141,6 +141,8 @@ public class world {
     private void stage1entity()
     {
         entitymanager.addEntity(new torch(handler,400,400));
+        //        entitymanager.addEntity(new portal(handler,1920,1800));
+        entitymanager.addEntity(new portal(handler,2110,130));
         Logic.enemystage1=true;
         
 //        //enemy
@@ -239,6 +241,7 @@ public class world {
         if(Stat.isDie())
         {
             entitymanager = new Entitymanager(handler,new player(handler,100,100));
+            Logic.enemystage1=false;
             Stat.setDie(false);
         }
         if(Stat.isIngame())
