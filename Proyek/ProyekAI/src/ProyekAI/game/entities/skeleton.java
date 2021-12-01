@@ -12,6 +12,7 @@ import ProyekAI.game.handler.handler;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import java.util.PriorityQueue;
 import java.util.Random;
 
 /**
@@ -149,6 +150,48 @@ public class skeleton extends character{
         h = x - player.getXpl() + y - player.getYpl();
         n = new Node(h);
         System.out.println(h);
+    }
+    
+    public static Node aStar(Node start, Node target){
+        PriorityQueue<Node> closedList = new PriorityQueue<>();
+        PriorityQueue<Node> openList = new PriorityQueue<>();
+
+        start.f = (float) (start.g + start.calculateHeuristic(target));
+        openList.add(start);
+
+        while(!openList.isEmpty()){
+            Node n = openList.peek();
+            if(n == target){
+                return n;
+            }
+
+            for(Node.Edge edge : n.neighbors){
+                Node m = edge.node;
+                float totalWeight = n.g + edge.H;
+
+                if(!openList.contains(m) && !closedList.contains(m)){
+                    m.parent = n;
+                    m.g = totalWeight;
+                    m.f = (float) (m.g + m.calculateHeuristic(target));
+                    openList.add(m);
+                } else {
+                    if(totalWeight < m.g){
+                        m.parent = n;
+                        m.g = totalWeight;
+                        m.f = (float) (m.g + m.calculateHeuristic(target));
+
+                        if(closedList.contains(m)){
+                            closedList.remove(m);
+                            openList.add(m);
+                        }
+                    }
+                }
+            }
+
+            openList.remove(n);
+            closedList.add(n);
+        }
+        return null;
     }
 
     @Override
