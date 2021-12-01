@@ -58,7 +58,7 @@ public class Entitymanager {
             }
             enemytime++;
             
-            AStar as = new AStar(tile, 0, 0, true);
+            AStar as = new AStar(tile, 4, 20, true);
             List<AStar.Node> pathh = as.findPathTo(7, 7);
             if (pathh != null) {
                 pathh.forEach((n) -> {
@@ -69,6 +69,24 @@ public class Entitymanager {
                     for (int maze_entry : tile_row) {
                         switch (maze_entry) {
                             case 51:
+                                System.out.print(" ");
+                                break;
+                            case 52:
+                                System.out.print(" ");
+                                break;
+                            case 53:
+                                System.out.print(" ");
+                                break;
+                            case 55:
+                                System.out.print(" ");
+                                break;
+                            case 54:
+                                System.out.print(" ");
+                                break;
+                            case 56:
+                                System.out.print(" ");
+                                break;
+                            case 61:
                                 System.out.print(" ");
                                 break;
                             case -1:

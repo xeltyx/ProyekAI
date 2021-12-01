@@ -301,11 +301,14 @@ public class world {
     
     public tilegame getTile(int x,int y)
     {
+        tilegame t = null;
         if(x<0 || y<0 || x>=width || y>=height)
         {
             return tilegame.dirt;
         }
-        tilegame t =tilegame.tile[tile[x][y]];
+        try{
+            t =tilegame.tile[tile[x][y]];
+        }catch(Exception e){}
         if(t==null)
         {
             return tilegame.dirt;

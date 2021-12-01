@@ -118,14 +118,6 @@ public class AStar {
                     && !findNeighborInList(this.open, node) && !findNeighborInList(this.closed, node)) { // if not already done
                         node.g = node.parent.g + 1.; // Horizontal/vertical cost = 1.0
                         node.g += maze[this.now.y + y][this.now.x + x]; // add movement cost for this square
- 
-                        // diagonal cost = sqrt(hor_cost² + vert_cost²)
-                        // in this example the cost would be 12.2 instead of 11
-                        /*
-                        if (diag && x != 0 && y != 0) {
-                            node.g += .4;	// Diagonal movement cost = 1.4
-                        }
-                        */
                         this.open.add(node);
                 }
             }

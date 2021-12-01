@@ -17,6 +17,7 @@
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/game.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/MainMenu.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/utils/utils.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/Gamecamera.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/assets.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/statics/StaticEntity.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/character.java</file>
@@ -28,10 +29,12 @@
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/Entity.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/spritesheet.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/gfx/text.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/bahamut.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/stat/Stat.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/handler/Continue.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/res/world/stage1.txt</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/Entitymanager.java</file>
+            <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/entities/AStar.java</file>
             <file>file:/E:/Github%20data/ProyekAI/Proyek/ProyekAI/src/ProyekAI/game/states/state.java</file>
         </group>
     </open-files>
