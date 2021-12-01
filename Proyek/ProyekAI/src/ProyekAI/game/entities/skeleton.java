@@ -134,7 +134,9 @@ public class skeleton extends character{
         }
     }
     float h;
+    float h1;
     Node n;
+    Node pl;
     @Override
     public void tick() {
         dietick();
@@ -148,8 +150,11 @@ public class skeleton extends character{
         move();
         attack();
         h = x - player.getXpl() + y - player.getYpl();
+        h1 =player.getXpl()-x + player.getYpl()-y;
         n = new Node(h);
-        System.out.println(h);
+        pl = new Node(h1);
+        Node path = aStar(n,pl);
+        System.out.println();
     }
     
     public static Node aStar(Node start, Node target){

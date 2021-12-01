@@ -41,6 +41,8 @@ import ProyekAI.game.entities.statics.volcarock;
 import ProyekAI.game.entities.statics.volcarock2;
 import ProyekAI.game.entities.worm;
 import ProyekAI.game.entities.zombiemage;
+import ProyekAI.game.entities.AStar;
+import ProyekAI.game.entities.AStar.Node;
 import ProyekAI.game.entities.zombiewarrior;
 import static ProyekAI.game.gfx.assets.sandrock2;
 import ProyekAI.game.handler.handler;
@@ -48,6 +50,7 @@ import ProyekAI.game.stat.Stat;
 import ProyekAI.game.tiles.tilegame;
 import ProyekAI.game.utils.utils;
 import java.awt.Graphics;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -59,7 +62,7 @@ public class world {
     public static boolean inshop=false;
     private handler handler;
     private int width,height;
-    private int[][] tile;
+    public static int[][] tile;
     private int spx,spy;
     private Entitymanager entitymanager;
 
@@ -144,6 +147,8 @@ public class world {
         //        entitymanager.addEntity(new portal(handler,1920,1800));
         entitymanager.addEntity(new portal(handler,2110,130));
         Logic.enemystage1=true;
+       
+    
         
 //        //enemy
 //        for (int i = 0; i < 2; i++) {

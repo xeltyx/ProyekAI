@@ -8,9 +8,11 @@ package ProyekAI.game.entities;
 import ProyekAI.game.Logic;
 import ProyekAI.game.handler.handler;
 import ProyekAI.game.stat.Stat;
+import static ProyekAI.game.world.world.tile;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 /**
  *
@@ -45,17 +47,40 @@ public class Entitymanager {
     
     int jumlahmusuh;
     public void tick()
-    {            
+    {       
         if(Logic.enemystage1)
         {
-            if(enemytime>300 && enemyctr<20)
+            if(enemytime>700 && enemyctr<20)
             {
                 enemyctr++;
                 enemytime=0;
-//                addEntity(new skeleton(handler,1950,1900));
                 addEntity(new skeleton(handler,2140,230));
             }
             enemytime++;
+            
+            AStar as = new AStar(tile, 0, 0, true);
+            List<AStar.Node> pathh = as.findPathTo(7, 7);
+            if (pathh != null) {
+                pathh.forEach((n) -> {
+                    tile[n.y][n.x] = -1;
+                });
+
+                for (int[] tile_row : tile) {
+                    for (int maze_entry : tile_row) {
+                        switch (maze_entry) {
+                            case 51:
+                                System.out.print(" ");
+                                break;
+                            case -1:
+                                System.out.print("*");
+                                break;
+                            default:
+                                System.out.print("#");
+                        }
+                    }
+                    System.out.println();
+                }
+            }
         }
         for (int i = 0; i < entities.size(); i++) {
             Entity e = entities.get(i);
